@@ -1,0 +1,38 @@
+:root {
+  --primary: #66ccff;
+  --bg: #e4e4e4;
+  --ctr: #a5a5a5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  color: var(--bg);
+}
+
+body {
+  width: 90%;
+  max-height: 2000px;
+  background-color: #444;
+  color: var(--bg);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+}
+
+.box-navbar {
+  display: flex;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.menu li a:hover {
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+  cursor: pointer;
+}

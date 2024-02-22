@@ -1,0 +1,89 @@
+:root {
+  --main: #66ccff;
+  --pink: #e4aaf1;
+  --bg: #eaeaea;
+  --shadow: 2px 2px 3px rgb(1 1 1 /0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  min-height: 2000px;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #444; */
+  align-items: center;
+  justify-content: center;
+  color: #eaeaea;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/main-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  filter: blur(3px) grayscale(75%);
+}
+.navbar-brand img {
+  max-width: 5rem;
+  object-fit: cover;
+}
+
+.navbar button,
+.navbar-nav a {
+  color: var(--main);
+}
+
+.hero .hero-logo {
+  margin: 0 auto;
+  background-image: url(../img/logo.png);
+
+  position: relative;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-family: "Handlee", sans-serif;
+  font-size: 2rem;
+  text-shadow: var(--shadow);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #eaeaea;
+  text-shadow: var(--shadow);
+}
+
+.hero a {
+  background-color: #66ccff;
+  font-weight: 700;
+  color: #eaeaea;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: rgb(81, 115, 157);
+  color: var(--main);
+}
+
+.mynavbar {
+  text-align: center;
+}
